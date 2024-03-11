@@ -25,17 +25,15 @@
     let c= +prompt("Nhập số c");
     let delta= b*b-4*a*c;
     let xk=-b/2*a;
-    let x1=-1;
-    let x2=-c/a;
+    let x1=(-b+ Math.sqrt(delta))/2*a;
+    let x2=(-b- Math.sqrt(delta))/2*a;
     if (delta<0){
         console.log("Phương trình vô nghiệm")
     } else if (delta>0){
         console.log("Phương trình có nghiệm x1=" +x1)
         console.log("Phương trình có nghiệm x2=" +x2)
-    } else if (delta==0){
+    } else
         console.log("Phương trình có nghiệm kép x=" +xk)
-
-    }
 </script>
 </body>
 </html>
